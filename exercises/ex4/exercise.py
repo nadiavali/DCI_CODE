@@ -18,3 +18,10 @@ while n < 3:
     n += 1
     
 
+#task2
+
+l1 =['January','February','March','May','April','Jun','July','August','September','October','November','December']
+l2 = range(1,32)
+for i in l1 and l2 :
+    print(str(input('month')))
+    print(int(input('day')))

@@ -57,7 +57,7 @@ big_numbers is set to  False
 Your task is to write a Python program to convert month name to a number of days. 
 >Hint: Print list of months at the beginning.  
 
-User should be prompted to enter name of the month and the output shoul be the number of days in given month.
+User should be prompted to enter name of the month and the output should be the number of days in given month.
 
 - Some of your results could look like this:
 
