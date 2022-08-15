@@ -58,3 +58,25 @@ if tempCon == 'c' :
     print((temp*1.8)+32)
 else:
     print((temp-32)/1.8)
+
+#task7
+
+m=print( '*')
+z=print(2* '*')
+l=print(3* '*')
+s=print(4* '*')
+j=print(5* '*')
+
+y=5
+for i in range(y,0,-1):
+    for m in range(i):
+      print('*', end='')
+print('')
+
+#task8
+
+x, y = 0, 1
+
+while y < 50:
+    print(y)
+    x, y = y, x+y
