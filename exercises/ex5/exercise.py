@@ -61,7 +61,7 @@ else:
 
 #task7
 
-m=print( '*')
+m=print( '* \n'+2*'*'+3*'*'+4*'*'+5*'*')
 z=print(2* '*')
 l=print(3* '*')
 s=print(4* '*')
@@ -79,4 +79,4 @@ x, y = 0, 1
 
 while y < 50:
     print(y)
-    x, y = y, x+y
+    x, y = y, x+y sum = n+1
