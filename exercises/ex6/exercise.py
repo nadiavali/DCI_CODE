@@ -99,3 +99,26 @@ z = float(input("Third number: "))
 
 print("The maximum value is ", max(x, y ,z))
 print("The minimum value is ", min(x, y ,z))
+
+#task9
+x = int(input("Type your value:"))
+
+if x == 0:
+    x=False
+elif x ==1:
+    x =True
+else:
+ pass
+
+print("Your entered value is now ", x)
+
+#task10
+x = int(input("First number: "))
+y = int(input("Second number: "))
+
+if x %y == 0:
+    print("First number is divisible by second number, result =", x // y)
+elif y %x == 0:
+    print("Second number is divisible by first number, result =", y // x)
+else:
+    print("Numbers are non-divisible!")
