@@ -1,6 +1,9 @@
-x = float(input("First number: "))
-y = float(input("Second number: "))
-z = float(input("Third number: "))
+x = int(input("First number: "))
+y = int(input("Second number: "))
 
-print("The maximum value is ", max(x, y ,z))
-print("The minimum value is ", min(x, y ,z))
+if x %y == 0:
+    print("First number is divisible by second number, result =", x // y)
+elif y %x == 0:
+    print("Second number is divisible by first number, result =", y // x)
+else:
+    print("Numbers are non-divisible!")
