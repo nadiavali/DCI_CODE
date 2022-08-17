@@ -47,13 +47,12 @@ while x > 0:
     print(x)
     x -= 1
     
-x = 10
 countdown = 5
 while countdown :
     print(countdown)
     countdown -= 1
-
-print("Start!")
+else:
+    print("Start!")
 
 #task5
 
@@ -75,14 +74,14 @@ y = int(input("Second number: "))
 
 result = x + y
 
-if result > 15 and result < 20:
+if result >= 15 and result <= 20:
     result= 20
 print("Calculated sum is ", result)
 
 #task7
 
-a = str(input("First value: "))
-b = str(input("Second value: "))
+a = input("First value: ")
+b = input("Second value: ")
 
 print("Before swapping: ",a,b )
 
@@ -101,11 +100,11 @@ print("The maximum value is ", max(x, y ,z))
 print("The minimum value is ", min(x, y ,z))
 
 #task9
-x = int(input("Type your value:"))
+x =input("Type your value:")
 
-if x == 0:
+if x == '0':
     x=False
-elif x ==1:
+elif x =='1':
     x =True
 else:
  pass
@@ -117,8 +116,8 @@ x = int(input("First number: "))
 y = int(input("Second number: "))
 
 if x %y == 0:
-    print("First number is divisible by second number, result =", x // y)
+    print("First number is divisible by second number, result =", float(x / y))
 elif y %x == 0:
-    print("Second number is divisible by first number, result =", y // x)
+    print("Second number is divisible by first number, result =", float(y / x))
 else:
     print("Numbers are non-divisible!")
