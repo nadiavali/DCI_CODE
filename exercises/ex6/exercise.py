@@ -79,4 +79,23 @@ if result > 15 and result < 20:
     result= 20
 print("Calculated sum is ", result)
 
+#task7
 
+a = str(input("First value: "))
+b = str(input("Second value: "))
+
+print("Before swapping: ",a,b )
+
+temp = a
+a = b
+b = temp
+print("After swapping:" , a,b)
+
+#task8
+
+x = float(input("First number: "))
+y = float(input("Second number: "))
+z = float(input("Third number: "))
+
+print("The maximum value is ", max(x, y ,z))
+print("The minimum value is ", min(x, y ,z))
