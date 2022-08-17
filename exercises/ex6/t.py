@@ -1,9 +1,6 @@
-a = int(input("First value: "))
-b = int(input("Second value: "))
+x = float(input("First number: "))
+y = float(input("Second number: "))
+z = float(input("Third number: "))
 
-print("Before swapping: a =", a, "b", b )
-
-temp = a
-a = b
-b=temp
-print("After swapping:" , 'a =', a, 'b=' ,b)
+print("The maximum value is ", max(x, y ,z))
+print("The minimum value is ", min(x, y ,z))
