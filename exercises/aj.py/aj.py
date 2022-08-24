@@ -10,14 +10,15 @@ from email.message import * #optional
 
 
 #email function  (optional & advanced)
-def gmail_send(subject, message, fromI, to, passI):
-    global link
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.starttls()
-    server.login(fromI, passI)
-    msg            = EmailMessage()
-    message        = f'{message}'
-    msg.set_content(message)
-    msg['Subject'] = subject
-    msg['From']    = fromI
-    msg['To']      = to
+# def gmail_send(subject, message, fromI, to, passI):
+#     global link
+#     server = smtplib.SMTP('smtp.gmail.com', 587)
+#     server.starttls()
+#     server.login(fromI, passI)
+#     msg            = EmailMessage()
+#     message        = f'{message}'
+#     msg.set_content(message)
+#     msg['Subject'] = subject
+#     msg['From']    = fromI
+#     msg['To']      = to
+
