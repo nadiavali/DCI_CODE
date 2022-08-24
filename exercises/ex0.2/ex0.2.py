@@ -1,5 +1,5 @@
 
-secret =input('this is my secret') 
+secret ='this is my secret' 
 love_name =input('your love name')
 birthday = input("your love's year of birth")
 
