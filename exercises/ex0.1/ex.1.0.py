@@ -35,4 +35,15 @@ Elbe) in the western borough of Spandau.'''
 
 print(text[-10:])
 
+#task6
+
+text = '---Python programming---'
+print(text.strip('-'))
+
+#task7
+
+name = 'Nadia'
+surname = 'Vali'
+print('firstname:'+ name + '\n' + 'lastname:' + surname)
+
 
