@@ -1,5 +1,5 @@
 def join_shop(a):
     se = ','
-    a = se.join(a)
-    return a
+    result = se.join(a)
+    return result
 print(join_shop(['banana' , 'apple']))
