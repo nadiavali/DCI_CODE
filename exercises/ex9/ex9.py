@@ -1,7 +1,7 @@
 def Normalize(n):
     n.lower()
     n.capitalize()
-    n = print(n.capitalize()+'!')
-    return n
+    result = n.capitalize()+'!'
+    return result
 
 print(Normalize('TODAY IS A GREAT DAY'))
