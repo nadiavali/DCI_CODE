@@ -2,15 +2,15 @@ import time
 from time import sleep
 
 def stopwatch():
-    n = time.time()
-    m = time.ctime()
-    print('This is unix time: ', n)
-    print('In another word:', m)
-    sleep(3)
-    u =time.time()
-    t = time.ctime()
-    z = u - n
-    print('This is another unix time:', u)
-    print('In another word for second unix time:', t)
-    print('This is the difference between two times:',z)
+    now = time.time()
+    now_readable = time.ctime()
+    print('This is the unix time: ', now)
+    print('In another word:', now_readable)
+    sleep(5)
+    later =time.time()
+    later_readable = time.ctime()
+    time_lapse = later - now
+    print('This is another unix time:', later)
+    print('In another word for second unix time:', later_readable)
+    print('This is the difference between two times:',round(time_lapse))
 stopwatch()
