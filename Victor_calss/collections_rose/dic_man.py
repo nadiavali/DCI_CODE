@@ -1,47 +1,47 @@
-# template = dict.fromkeys(("street", "number", "zip", "city", "country") ,"Unknown") #unknown is optional
-# print(template)
+template = dict.fromkeys(("street", "number", "zip", "city", "country") ,"Unknown") #unknown is optional
+print(template)
 
-# address = template.copy()
-# print(address)
+address = template.copy()
+print(address)
 
-# address.update({'street':'Hogwarts'})
-# print(address)
-# user = {'john': {'name': 'John Doe'}}
-# print(user['john'])
-# print(user.get('john'))
-# print(user.get('salary'))
-# print(user.get('salary', 0.33))
-# print(user)
+address.update({'street':'Hogwarts'})
+print(address)
+user = {'john': {'name': 'John Doe'}}
+print(user['john'])
+print(user.get('john'))
+print(user.get('salary'))
+print(user.get('salary', 0.33))
+print(user)
 
-# user.setdefault('mario',{'name': 'mario sanchez'}) # if it does not exist it 
-# #will create default value and default key
-# print(user)
+user.setdefault('mario',{'name': 'mario sanchez'}) # if it does not exist it 
+#will create default value and default key
+print(user)
 
-# user.setdefault('mario',{'name':'man'})
-# print(user)
+user.setdefault('mario',{'name':'man'})
+print(user)
 
-# user['john']['age'] = 28
-# print(user)
+user['john']['age'] = 28
+print(user)
 
-# user['mario']['age'] = 29
-# print(user)
+user['mario']['age'] = 29
+print(user)
 
-# template.update(user) # merging two dicts
-# print(template)
+template.update(user) # merging two dicts
+print(template)
 
-# print(user.popitem()) #remove last item no argument and 
+print(user.popitem()) #remove last item no argument and 
 
-# print(user)
+print(user)
 
-# print(template.pop('zip')) #remove the value of the passed key and return the value
-# print(template)
+print(template.pop('zip')) #remove the value of the passed key and return the value
+print(template)
 
-# print(template.keys())
-# #dict_keys(['street', 'number', 'city', 'country', 'john', 'mario'])
+print(template.keys())
+#dict_keys(['street', 'number', 'city', 'country', 'john', 'mario'])
 
-# print(template.values())
+print(template.values())
 
-# print(template.items())
+print(template.items())
 
 
 '''methods of dict'''
@@ -51,10 +51,10 @@
 #items #key #values
 
 
-# dict1 = {"c": 2, "b": 1, "a": 3}
-# print(sorted(dict1)) # sort the keys
-# print(sorted(dict1.values())) #sort the values
-# print(sorted(dict1, reverse=True)) # sort and then reverse it(default of reverse is false)
+dict1 = {"c": 2, "b": 1, "a": 3}
+print(sorted(dict1)) # sort the keys
+print(sorted(dict1.values())) #sort the values
+print(sorted(dict1, reverse=True)) # sort and then reverse it(default of reverse is false)
 
 dict1 = [
 {"name": "John", "age": 31},
@@ -154,4 +154,15 @@ print(home.county)
 
 print(home._asdict()) #turn it into dict
 print(home._replace(number=6))
-print(home)
+print(home)  #The original object is still read-only and does not change.
+
+
+inventory = {"apples": 430, "bananas": 312, "oranges": 525, "pears": 217}
+
+del inventory["apples"]
+print(inventory)
+
+# adding new load to an item
+
+inventory["bananas"] += 200
+print(inventory)

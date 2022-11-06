@@ -17,19 +17,19 @@
 # print(list1)
 
 
-# nums = [1, 2, 3]
-# eng = ('one', 'two', 'three')
+nums = [1, 2, 3]
+eng = ('one', 'two', 'three')
 
-# zip1 = zip(eng, nums)
-# print(zip1)
+zip1 = zip(eng, nums)
+print(zip1)
 
 # for item in zip1:
 #     print(item)
 
 # #or
 
-# for item in zip(eng, nums):
-#     print(item)
+for item in zip(eng, nums):
+    print(item)
 
 
 # map function, that
@@ -48,11 +48,11 @@ print(list(a_list_by_two)) # if you dont add list it won't show you the result
 # with the elements of the given iterable
 # that match a condition defined in a
 # function
-nums = [1, 2, 3, 4, 5]
-is_odd = lambda num: (num % 2) != 0
-odds = filter(is_odd, nums)  # if they match the condition of func # not changing the iterable only filter them
-print(odds)
-print(list(odds))
+# nums = [1, 2, 3, 4, 5]
+# is_odd = lambda num: (num % 2) != 0
+# odds = filter(is_odd, nums)  # if they match the condition of func # not changing the iterable only filter them
+# print(odds)
+# print(list(odds))
 
 
 #counter
@@ -95,6 +95,10 @@ for item in counters.most_common():  # return a list sorted by occurrence in des
     print(item) #The items of the list will be tuples containing both the value and the
                 #counter of each item.
 
+
+# Counters can also be used
+# with some binary
+# operators.
 
 counter = Counter(Apple=1, Cabbage=2)
 counter2 = Counter(Cabbage=1, Carrot=2)
