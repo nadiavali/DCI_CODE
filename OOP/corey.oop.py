@@ -25,7 +25,7 @@ class Employee():
 #print(Employee_1.raise_amount)
 
     @classmethod
-    def from_string(cls, emp_str):
+    def from_string(cls, emp_str): #using class method as alternative constructor
         first, last, pay = emp_str.split('-')
         return cls(first, last, pay)
 

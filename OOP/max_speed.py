@@ -6,14 +6,11 @@ class Vehicle:
 
 
 class Bus(Vehicle):
-    def seating_capacity(self, capacity = 50):
-        return f"The seating capacity of a {self.name} is {capacity} passengers"
+    def __init__(self, name, max_speed, mileage):
+        super().__init__(name, max_speed, mileage)
+        pass
 
-    
 
-
-b = Bus('volvo',200,2)
-print(b.seating_capacity())
 
     # def max_speed(self):
     #     return self.max_speed
@@ -30,5 +27,5 @@ print(b.seating_capacity())
 # print(v.mileage)
 #print(v)
 
-# b = Bus('Volvo', 70, 4)
-# print('vehicle Name:', b.name, 'speed:', b.max_speed, 'mileage:', b.mileage)
+b = Bus('Volvo', 70, 4)
+print('vehicle Name:', b.name, 'speed:', b.max_speed, 'mileage:', b.mileage)

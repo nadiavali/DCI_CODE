@@ -1,3 +1,11 @@
+
+# Hint:
+# # First, use method overriding. 
+# Next, use default method argument in the seating_capacity() method definition of a bus class.
+
+
+
+
 class Vehicle:
     def __init__(self, name, max_speed, mileage):
         self.name = name
