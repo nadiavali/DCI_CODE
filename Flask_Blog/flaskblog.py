@@ -1,10 +1,15 @@
+# export FLASK_APP=flaskblog.py
+#flask run
+#export FLASK_DEBUG=1 #to can make as much change'as we need withot crl+c
+
 from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
-    return "<h1>Home Page!</h1>"
+@app.route("/home")
+def home():
+    return "<h1>This is a Header!</h1>"  # heading text in html 
 
 @app.route("/about")
 def about():
