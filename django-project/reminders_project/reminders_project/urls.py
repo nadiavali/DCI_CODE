@@ -23,6 +23,6 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path("", index),
     path("assignment-1/", hello_json),
-    path("reminders", include('reminders.urls')),
+    path("reminders/", include('reminders.urls')),
     
 ]
